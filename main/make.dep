@@ -1,0 +1,4 @@
+SRC_MAIN = main.c bonus.c tool.c
+INCLUDE+= $(shell pwd)/main/
+SRCS+= $(SRC_MAIN)
+ALLC+= $(addprefix $(shell pwd)/main/, $(SRC_MAIN))

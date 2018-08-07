@@ -1,0 +1,6 @@
+SRC_PERCENT = a00_launcher.c a01_basic_01.c a02_flags_01.c a03_flags_02.c a04_flags_03.c a05_precision_01.c \
+a06_precision_02.c a07_precision_03.c a08_precision_04.c a09_padding_01.c a10_padding_02.c a11_padding_03.c \
+a12_all_01.c
+INCLUDE+= $(shell pwd)/percent/
+SRCS+= $(SRC_PERCENT)
+ALLC+= $(addprefix $(shell pwd)/percent/, $(SRC_PERCENT))

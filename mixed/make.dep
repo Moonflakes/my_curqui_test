@@ -1,0 +1,4 @@
+SRC_MIXED = a00_launcher.c a01_test_01.c a02_test_02.c a03_test_03.c a04_test_04.c a05_test_05.c
+INCLUDE+= $(shell pwd)/mixed/
+SRCS+= $(SRC_MIXED)
+ALLC+= $(addprefix $(shell pwd)/mixed/, $(SRC_MIXED))

@@ -299,7 +299,29 @@ SRC = $(addprefix main/, \
 	  $(addprefix conv_g_bigg/, \
 	  a00_launcher.c \
 	  a01_basic_01.c \
-	  a02_basic_02.c) \
+	  a02_basic_02.c \
+	  a03_basic_03.c \
+	  a04_basic_04.c \
+	  a05_basic_05.c \
+	  a06_basic_06.c \
+	  a07_basic_07.c \
+	  a08_basic_08.c \
+	  a09_devil_00.c \
+	  a10_longnb_01.c \
+	  a11_longnb_02.c \
+	  a12_padding_01.c \
+	  a13_padding_02.c \
+	  a14_padding_03.c \
+	  a15_precision_01.c \
+	  a16_precision_02.c \
+	  a17_precision_03.c \
+	  a18_precision_04.c \
+	  a19_precision_05.c \
+	  a20_all_01.c \
+	  a21_all_02.c \
+	  a22_all_03.c \
+	  a23_all_04.c \
+	  a24_all_05.c) \
 	  $(addprefix conv_a_biga/, \
 	  a00_launcher.c \
 	  a01_basic_01.c \

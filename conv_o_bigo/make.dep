@@ -1,0 +1,9 @@
+SRC_O = a00_launcher.c a01_basic_01.c a02_basic_02.c a03_basic_03.c a04_flags_01.c a05_flags_02.c \
+a06_flags_03.c a07_modifiers_01.c a08_modifiers_02.c a09_modifiers_03.c a10_modifiers_04.c a11_modifiers_05.c \
+a12_modifiers_06.c a13_basic_04.c a14_basic_05.c a15_basic_06.c a16_precision_01.c a17_precision_02.c \
+a18_precision_03.c a18_precision_04.c a20_precision_05.c a21_padding_01.c a22_padding_02.c a23_padding_03.c \
+a24_padding_04.c a25_padding_05.c a26_padding_06.c a27_padding_07.c a28_padding_08.c a29_all_01.c a30_all_02.c \
+a31_all_03.c a32_all_04.c a33_precision_06.c a34_precision_07.c a35_all_05.c a36_all_06.c
+INCLUDE+= $(shell pwd)/conv_o_bigo/
+SRCS+= $(SRC_O)
+ALLC+= $(addprefix $(shell pwd)/conv_o_bigo/, $(SRC_O))

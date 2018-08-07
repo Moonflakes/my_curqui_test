@@ -1,0 +1,11 @@
+SRC_DI = a00_launcher.c a01_basic_01.c a02_basic_02.c a03_basic_03.c a04_basic_04.c \
+a05_basic_05.c a06_flags_01.c a07_flags_02.c a08_flags_03.c a09_flags_04.c a10_flags_05.c \
+a11_modifiers_01.c a12_modifiers_02.c a13_modifiers_03.c a14_modifiers_04.c a15_modifiers_05.c \
+a16_modifiers_06.c a17_modifiers_07.c a18_basic_06.c a18_basic_07.c a20_basic_08.c \
+a21_precision_01.c a22_precision_02.c a23_precision_03.c a24_precision_04.c a25_precision_05.c \
+a26__01.c a27_padding_02.c a28_padding_03.c a29_padding_04.c a30_padding_05.c a31_padding_06.c \
+a32_padding_07.c a33_all_01.c a34_all_02.c a35_all_03.c a36_all_04.c a37_all_05.c \
+a38_precision_06.c a39_precision_06.c
+INCLUDE+= $(shell pwd)/conv_d_i_bigd/
+SRCS+= $(SRC_DI)
+ALLC+= $(addprefix $(shell pwd)/conv_d_i_bigd/, $(SRC_DI))

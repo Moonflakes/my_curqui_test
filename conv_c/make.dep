@@ -1,0 +1,5 @@
+SRC_C = a00_launcher.c a01_basic_01.c a02_basic_02.c a03_basic_03.c a04_basic_04.c \
+a05_padding_01.c a06_padding_02.c a07_padding_03.c a08_all_01.c
+INCLUDE+= $(shell pwd)/conv_c/
+SRCS+= $(SRC_C)
+ALLC+= $(addprefix $(shell pwd)/conv_c/, $(SRC_C))

@@ -1,0 +1,4 @@
+SRC_A = a00_launcher.c a01_basic_01.c a02_basic_02.c
+INCLUDE+= $(shell pwd)/conv_a_biga
+SRCS+= $(SRC_A)
+ALLC+= $(addprefix $(shell pwd)/conv_a_biga/, $(SRC_A))

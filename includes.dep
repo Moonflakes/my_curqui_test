@@ -1,0 +1,24 @@
+include basics/make.dep
+include conv_a_biga/make.dep
+include conv_g_bigg/make.dep
+include conv_o_bigo/make.dep
+include conv_u_bigu/make.dep
+include conv_x_bigx/make.dep
+include conv_e_bige/make.dep
+include conv_d_i_bigd/make.dep
+include conv_f/make.dep
+include conv_c/make.dep
+include conv_s/make.dep
+include conv_p/make.dep
+include conv_bigc/make.dep
+include conv_bigs/make.dep
+include percent/make.dep
+include mixed/make.dep
+
+#SRCS+=$(SRC_A) $(SRC_G) $(SRC_O)) $(SRC_U) $(SRC_X) $(SRC_E) $(SRC_DI) $(SRC_F)\
+#	  $(SRC_P) $(SRC_C) $(SRC_S) $(SRC_BIGC) $(SRC_BIGS) $(SRC_PERCENT) $(SRC_MIXED)
+
+# Insert les .o dans un seul dossier obj/
+OBJ=$(SRCS:%.c=%.o)
+OPATH= obj/
+PATH_OBJ=$(addprefix $(OPATH), $(OBJ))

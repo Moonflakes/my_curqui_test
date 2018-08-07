@@ -1,0 +1,4 @@
+SRC_E = a00_launcher.c a01_basic_01.c a02_basic_02.c
+INCLUDE+= $(shell pwd)/conv_e_bige/
+SRCS+= $(SRC_E)
+ALLC+= $(addprefix $(shell pwd)/conv_e_bige/, $(SRC_E))
