@@ -7,12 +7,12 @@ int		g_basic_05(void)
 	int		ret;
 	int		save_stdout;
 
-	ft_write_test_name("%g /\n, 12.07854387946");
+	ft_write_test_name("%g , 12.07854387946");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("%g \n", 12.07854387946);
+	data.r1 = ft_printf("%g", 12.07854387946);
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("%g \n", 12.07854387946);
+	data.r2 = printf("%g", 12.07854387946);
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)

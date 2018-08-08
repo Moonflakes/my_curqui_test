@@ -7,12 +7,12 @@ int		e_basic_03(void)
 	int		ret;
 	int		save_stdout;
 
-	ft_write_test_name("%e /\n, 5.0");
+	ft_write_test_name("%e , 5.0");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("%e \n", 5.0);
+	data.r1 = ft_printf("%e", 5.0);
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("%e \n", 5.0);
+	data.r2 = printf("%e", 5.0);
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)

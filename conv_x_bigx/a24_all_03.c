@@ -9,10 +9,10 @@ int		x_all_03(void)
 
 	ft_write_test_name("toto %0##0.4X%#4.2xet c'est fini \\n, 0x037a, 0x9e");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("toto %0##0.4X%#4.2xet c'est fini \n", 0x037a, 0x9e);
+	data.r1 = ft_printf("toto %0##0.4X%#4.2xet c'est fini", 0x037a, 0x9e);
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("toto %0##0.4X%#4.2xet c'est fini \n", 0x037a, 0x9e);
+	data.r2 = printf("toto %0##0.4X%#4.2xet c'est fini", 0x037a, 0x9e);
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)

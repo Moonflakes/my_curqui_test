@@ -7,12 +7,12 @@ int		e_all_05(void)
 	int		ret;
 	int		save_stdout;
 
-	ft_write_test_name("%*.*e  /\n, 20, 8, 12.45");
+	ft_write_test_name("%*.*e  , 20, 8, 12.45");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("%*.*e  \n", 20, 8, 12.45);
+	data.r1 = ft_printf("%*.*e ", 20, 8, 12.45);
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("%*.*e  \n", 20, 8, 12.45);
+	data.r2 = printf("%*.*e ", 20, 8, 12.45);
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)

@@ -7,12 +7,12 @@ int		g_precision_04(void)
 	int		ret;
 	int		save_stdout;
 
-	ft_write_test_name("%.20g  /\n, 4895.4570");
+	ft_write_test_name("%.20g  , 4895.4570");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("%.20g  \n", 4895.457);
+	data.r1 = ft_printf("%.20g ", 4895.457);
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("%.20g  \n", 4895.457);
+	data.r2 = printf("%.20g ", 4895.457);
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)

@@ -7,12 +7,12 @@ int		f_all_05(void)
 	int		ret;
 	int		save_stdout;
 
-	ft_write_test_name("%0*.*i %*.*f  /\n, 15, 2, 45456, 20, 8, 12.45");
+	ft_write_test_name("%0*.*i %*.*f  , 15, 2, 45456, 20, 8, 12.45");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("%0*.*i %*.*f  \n", 15, 2, 45456, 20, 8, 12.45);
+	data.r1 = ft_printf("%0*.*i %*.*f ", 15, 2, 45456, 20, 8, 12.45);
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("%0*.*i %*.*f  \n", 15, 2, 45456, 20, 8, 12.45);
+	data.r2 = printf("%0*.*i %*.*f ", 15, 2, 45456, 20, 8, 12.45);
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)

@@ -7,12 +7,12 @@ int		f_basic_06(void)
 	int		ret;
 	int		save_stdout;
 
-	ft_write_test_name("%f /\n, -4.98705");
+	ft_write_test_name("%f , -4.98705");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("%f \n", -4.98705);
+	data.r1 = ft_printf("%f", -4.98705);
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("%f \n", -4.98705);
+	data.r2 = printf("%f", -4.98705);
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)

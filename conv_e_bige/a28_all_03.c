@@ -7,12 +7,12 @@ int		e_all_03(void)
 	int		ret;
 	int		save_stdout;
 
-	ft_write_test_name("%#.1E %#.1E %#.1E %#.1E /\n, 0.0, -45.789, 1.0, 0,.004745");
+	ft_write_test_name("%#.1E %#.1E %#.1E %#.1E , 0.0, -45.789, 1.0, 0,.004745");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("%#.1E %#.1E %#.1E %#.1E \n", 0.0, -45.789, 1.0, 0.0004745);
+	data.r1 = ft_printf("%#.1E %#.1E %#.1E %#.1E", 0.0, -45.789, 1.0, 0.0004745);
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("%#.1E %#.1E %#.1E %#.1E \n", 0.0, -45.789, 1.0, 0.0004745);
+	data.r2 = printf("%#.1E %#.1E %#.1E %#.1E", 0.0, -45.789, 1.0, 0.0004745);
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)

@@ -1,4 +1,9 @@
-SRC_A = a00_launcher.c a01_basic_01.c a02_basic_02.c
+SRC_A = a00_launcher.c a01_basic_01.c a02_basic_02.c a03_basic_03.c a04_basic_04.c a05_basic_05.c \
+a06_basic_06.c a07_basic_07.ca 08_basic_08.c a09_basic_09.c a10_basic_10.c a11_basic_11.c a12_basic_12.c a13_devil_00.c \
+a14_longnb_01.c a15_longnb_02.c a16_longnb_03.c a17_padding_01.c a18_padding_02.c a19_padding_03.c a20_padding_04.c \
+a21_padding_05.c a22_precision_01.c a23_precision_02.c a24_precision_03.c a25_precision_04.c a26_precision_05.c \
+a27_precision_06.c a28_longa_01.c a29_longa_02.c a30_longa_03.c a31_longa_04.c a32_longa_05.c a33_all_01.c \
+a34_all_02.c a35_all_03.c a36_all_04.c a37_all_05.c a38_all_06.c a39_all_07.c a40_all_08.c
 INCLUDE+= $(shell pwd)/conv_a_biga
 SRCS+= $(SRC_A)
 ALLC+= $(addprefix $(shell pwd)/conv_a_biga/, $(SRC_A))

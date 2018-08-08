@@ -25,7 +25,6 @@ void	    ft_bonus(t_score **score)
 
 	ft_init_btab(b);
 	ft_init_test_name(test_name);
-	ft_write_title();
 	ft_putstr("");
 	ft_putstr_col("*****************************************\n", B_YELLOW, DEF);
 	ft_putstr_col("************ BONUS - MTHIERY ************\n", B_YELLOW, DEF);

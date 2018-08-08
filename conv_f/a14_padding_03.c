@@ -7,12 +7,12 @@ int		f_padding_03(void)
 	int		ret;
 	int		save_stdout;
 
-	ft_write_test_name("%#f %#f %#f %#f %#f /\n, 0.0004745, 45.789, 5.0, 1.0, 0.00");
+	ft_write_test_name("%#f %#f %#f %#f %#f , 0.0004745, 45.789, 5.0, 1.0, 0.00");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("%#f %#f %#f %#f %#f \n", 0.0004745, 45.789, 5.0, 1.0, 0.0);
+	data.r1 = ft_printf("%#f %#f %#f %#f %#f", 0.0004745, 45.789, 5.0, 1.0, 0.0);
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("%#f %#f %#f %#f %#f \n", 0.0004745, 45.789, 5.0, 1.0, 0.0);
+	data.r2 = printf("%#f %#f %#f %#f %#f", 0.0004745, 45.789, 5.0, 1.0, 0.0);
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)
