@@ -7,12 +7,12 @@ int		a_all_02(void)
 	int		ret;
 	int		save_stdout;
 
-	ft_write_test_name("%#.a %#.a %#.a %#.a %#.a , 0.0, -45.789, 1.0, 0.0004745, 16777215.0");
+	ft_write_test_name("%#.a %#.A %#.a %#.A %#.a , 0.0, -45.789, 1.0, 0.0004745, 16777215.0");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("%#.a %#.a %#.a %#.a %#.a", 0.0, -45.789, 1.0, 0.0004745, 16777215.0);
+	data.r1 = ft_printf("%#.a %#.A %#.a %#.A %#.a", 0.0, -45.789, 1.0, 0.0004745, 16777215.0);
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("%#.a %#.a %#.a %#.a %#.a", 0.0, -45.789, 1.0, 0.0004745, 16777215.0);
+	data.r2 = printf("%#.a %#.A %#.a %#.A %#.a", 0.0, -45.789, 1.0, 0.0004745, 16777215.0);
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)
