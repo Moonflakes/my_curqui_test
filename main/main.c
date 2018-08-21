@@ -1,4 +1,5 @@
-#include "test.h"
+#include "test.h" 
+#include <stdio.h>
 
 static void	ft_init_ftab(int (**f)(int *, int *))
 {
@@ -39,8 +40,10 @@ void		ft_run_tests(t_score **score, int (**f)(int *, int *), char **name)
 	int		i;
 	int		success;
 	int		total;
+	int		nb;
 
 	i = 0;
+	nb = 0;
 	while (f[i])
 	{
 		success = 0;

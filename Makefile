@@ -392,7 +392,8 @@ SRC = $(addprefix main/, \
 	  a37_all_05.c \
 	  a38_all_06.c \
 	  a39_all_07.c \
-	  a40_all_08.c) \
+	  a40_all_08.c \
+	  a41_round_a_01.c)
 
 OBJ = $(SRC:%.c=%.o)
 

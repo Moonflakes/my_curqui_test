@@ -47,5 +47,6 @@ int		conv_a_biga_launcher(int *success, int *total)
 	ft_load_test(&test, "all_06", &a_all_06);
 	ft_load_test(&test, "all_07", &a_all_07);
 	ft_load_test(&test, "all_08", &a_all_08);
+	ft_load_test(&test, "round_a_01", &a_round_a_01);
 	return(ft_launch_tests(&test, success, total));
 }
